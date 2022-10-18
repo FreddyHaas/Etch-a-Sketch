@@ -1,0 +1,21 @@
+#container {
+    height: 510px;
+    width: 520px;
+    background: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 0px;
+}
+
+#box {
+    height: 30px;
+    width: 30px;
+    border: solid grey;
+    border-width: 1px;
+    background: white;
+    margin: 0px;
+    gap: 0px;
+}
+
