@@ -1,7 +1,8 @@
 #container {
-    height: 510px;
-    width: 520px;
+    height: 512px;
+    width: 512px;
     background: white;
+    border: solid black;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -9,7 +10,7 @@
     gap: 0px;
 }
 
-#box {
+.box {
     height: 30px;
     width: 30px;
     border: solid grey;
@@ -17,5 +18,9 @@
     background: white;
     margin: 0px;
     gap: 0px;
+}
+
+#boxEdited {
+    background: black;
 }
 
