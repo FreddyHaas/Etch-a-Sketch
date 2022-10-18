@@ -1,24 +1,30 @@
 #container {
-    height: 512px;
-    width: 512px;
+    height: 960px;
+    width: 960px;
     background: white;
     border: solid black;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 0px;
+    align-items: stretch;
+}
+
+.column {
+    flex: 1 1 auto;
+    height: 100%;
+    width: 100%;
+    background: white;
+    display: flex;
+    flex-direction: column;
 }
 
 .box {
-    height: 30px;
-    width: 30px;
-    border: solid grey;
-    border-width: 1px;
+    flex: 1 1 auto;
+    height: 100%;
+    width: 100%;
+    border: solid grey; 
+    border-width: 0.1px;
     background: white;
-    margin: 0px;
-    gap: 0px;
 }
+
 
 #boxEdited {
     background: black;
