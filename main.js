@@ -22,11 +22,21 @@ function createGrit (noOfRows) {
 let gritSize = 16;
 createGrit (gritSize);
 
+/* FUNCTION: Create random color */
+function createRandomColor () {
+    var rgb = [];
+    for (i = 0; i < 3; i++) {
+        rgb[i] = Math.floor(Math.random()*256);
+    }
+    return rgb;
+};
+
 /* Update color when hovering */
 const boxes = document.querySelectorAll('.box');
 boxes.forEach((box) => {
-    box.addEventListener ('mouseover', () => {
-        box.setAttribute('id', 'boxEdited');
+    box.addEventListener('mouseover', () => {
+        rgbValues = createRandomColor();
+        box.style.background = 'rgb(' + rgbValues[0] + ',' + rgbValues[1] + ',' + rgbValues[2] + ')';
     })});
 
 /* FUNCTION: Remove initial grit */
@@ -61,6 +71,8 @@ btn.addEventListener ('click', () => {
     const boxes = document.querySelectorAll('.box');
     boxes.forEach((box) => {
         box.addEventListener ('mouseover', () => {
-            box.setAttribute('id', 'boxEdited');
+            rgbValues = createRandomColor();
+            box.style.background = 'rgb(' + rgbValues[0] + ',' + rgbValues[1] + ',' + rgbValues[2] + ')';
     })});
 });
+
