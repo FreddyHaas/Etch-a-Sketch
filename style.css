@@ -1,8 +1,24 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    background: rgba(4, 52, 76, 0.756);
+    border-radius: 10px;
+    color: white;
+    font-size: 20px;
+    margin: 10px;
+    height: 30px;
+    width: 300px;
+}
+
 #container {
     height: 960px;
     width: 960px;
     background: white;
-    border: solid black;
     display: flex;
     align-items: stretch;
 }
